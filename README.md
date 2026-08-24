@@ -2,6 +2,10 @@
 
 This tool automatically converts the official eBlocker OS (64-bit) disk image from legacy BIOS (MBR) to include full UEFI boot support. It is designed for modern mini-PCs and Thin Clients that no longer support legacy boot modes.
 
+## Pre-Built Images
+
+To download the prebuilt images, go to the releases tab and it is visible there. Download the one appropiate for your system. 
+
 ## How It Works
 
 By default, the stock eBlocker 64-bit disk image only includes a single Linux partition formatted with an MBR (Master Boot Record). This script fully automates the conversion process without requiring you to flash the image first:
@@ -10,6 +14,7 @@ By default, the stock eBlocker 64-bit disk image only includes a single Linux pa
 2. Allocates a new 200MB FAT32 EFI boot partition.
 3. Uses a lightweight `chroot` environment to automatically fetch and install the official Debian `grub-efi-amd64` bootloader packages.
 4. Generates a new `grub.cfg` and updates the internal `/etc/fstab` to properly mount the EFI partition on boot.
+
 
 ## The Scripts
 
@@ -26,6 +31,8 @@ This is the standard script and the safest approach because it avoids touching t
 If you are flashing eBlocker to an older Thin Client that *actually* has a strict 8GB SSD (or a 8GB mSATA module), the standard image will be too large and Etcher will fail. This script takes the extra steps to shrink the internal Linux filesystem (which is mostly empty space anyway), rebuild the partition boundaries, and trim the image down.
 * **Final Image Size:** 7,200 MiB (~7.03 GB)
 * **Usage:** Use this script only if you absolutely need the image to securely fit on a small 8GB consumer SSD.
+
+
 
 ## Usage
 
