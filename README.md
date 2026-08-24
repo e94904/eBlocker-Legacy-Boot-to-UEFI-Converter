@@ -6,6 +6,8 @@ This tool automatically converts the official eBlocker OS (64-bit) disk image fr
 
 To download the prebuilt images, go to the releases tab and it is visible there. Download the one appropiate for your system. 
 
+https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases/tag/Standard
+
 ## How It Works
 
 By default, the stock eBlocker 64-bit disk image only includes a single Linux partition formatted with an MBR (Master Boot Record). This script fully automates the conversion process without requiring you to flash the image first:
