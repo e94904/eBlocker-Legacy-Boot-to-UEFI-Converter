@@ -1,4 +1,4 @@
-# eBlocker UEFI Converter
+# eBlocker-Legacy-Boot-to-UEFI-Converter
 
 This tool automatically converts the official eBlocker OS (64-bit) disk image from legacy BIOS (MBR) to include full UEFI boot support. It is designed for modern mini-PCs and Thin Clients that no longer support legacy boot modes.
 
