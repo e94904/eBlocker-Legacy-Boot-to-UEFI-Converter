@@ -2,6 +2,8 @@
 
 This tool automatically converts the official eBlocker OS (64-bit) disk image from legacy BIOS (MBR) to include full UEFI boot support. It is designed for modern mini-PCs and Thin Clients that no longer support legacy boot modes.
 
+Note this has only been tested to work on eBlockerVM-4.0.2 and I have no idea if it will work on future versions. 
+
 ## Pre-Built Images
 
 To download the prebuilt images, go to the releases tab and it is visible there. Download the one appropiate for your system. 
