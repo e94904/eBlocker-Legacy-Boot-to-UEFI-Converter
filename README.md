@@ -4,7 +4,7 @@
 
 This script automatically converts the official eBlocker OS (64-bit) disk image from legacy BIOS (MBR) to include full UEFI boot support. It is designed for modern mini-PCs and Thin Clients that no longer support legacy boot modes.
 
-**Note this has only been tested to work on eBlockerVM-4.0.2 and I have no idea if it will work on future versions. Also, this script is intended to be run on Linux. I have tested it in Ubuntu Multipass and WSL but it may not work on your distro. **
+**Note this has only been tested to work on the image "eBlockerVM-4.0.2" and I have no idea if it will work on future versions. Also, this script is intended to be run on Linux. I have tested it in Ubuntu Multipass and WSL but it may not work on your distro.**
 
 ## Pre-Built Images
 
