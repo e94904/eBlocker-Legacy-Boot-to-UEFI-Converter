@@ -1,14 +1,17 @@
 # eBlocker-Legacy-Boot-to-UEFI-Converter
 
-This tool automatically converts the official eBlocker OS (64-bit) disk image from legacy BIOS (MBR) to include full UEFI boot support. It is designed for modern mini-PCs and Thin Clients that no longer support legacy boot modes.
+[View Source Code on GitHub](https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter) | [Download Prebuilt Releases](https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases)
 
-Note this has only been tested to work on eBlockerVM-4.0.2 and I have no idea if it will work on future versions. 
+This script automatically converts the official eBlocker OS (64-bit) disk image from legacy BIOS (MBR) to include full UEFI boot support. It is designed for modern mini-PCs and Thin Clients that no longer support legacy boot modes.
+
+**Note this has only been tested to work on the image "eBlockerVM-4.0.2" and I have no idea if it will work on future versions. Also, this script is intended to be run on Linux. I have tested it in Ubuntu Multipass and WSL but it may not work on your distro.**
 
 ## Pre-Built Images
 
-To download the prebuilt images, go to the releases tab and it is visible there. Download the one appropiate for your system. 
+To download the prebuilt images, go to the releases tab and it is visible there. Download the one appropriate for your system. 
 
-https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases/tag/Standard
+[https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases/tag/Standard](https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases/tag/Standard)
+
 
 ## How It Works
 
@@ -50,4 +53,4 @@ chmod +x create-uefi.sh
 sudo ./create-uefi.sh eBlockerVM-4.0.2-amd64-beta.img.xz
 ```
 
-When finished, the script will output a new UEFI-compatible image named `eBlockerVM-4.0.2-amd64-beta-uefi.img.xz` that is ready to be flashed to your SSD using BalenaEtcher or Linux Disks.
+When finished, the script will output a new UEFI-compatible image named `eBlockerVM-4.0.2-amd64-beta-uefi.img.xz` that is ready to be flashed to your SSD or USB using BalenaEtcher or Linux Disks. I used Linux Mint and then used the Disks app to image my internal SSD but that isn't the only way. 
