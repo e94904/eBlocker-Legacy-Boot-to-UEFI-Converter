@@ -134,6 +134,7 @@ rm -f /etc/apt/sources.list.d/temp-debian.list
 echo "PARTUUID=${EFI_PARTUUID} /boot/efi vfat defaults 0 1" >> /etc/fstab
 
 # Install grub
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --boot-directory=/boot || true
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --boot-directory=/boot --removable
 update-grub
 EOF
