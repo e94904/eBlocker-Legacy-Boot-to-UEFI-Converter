@@ -10,7 +10,7 @@ This script automatically converts the official eBlocker OS (64-bit) disk image 
 
 To download the prebuilt images, go to the releases tab and it is visible there. Download the one appropriate for your system. 
 
-[https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases/tag/Standard](https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases/tag/Standard)
+[https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases](https://github.com/e94904/eBlocker-Legacy-Boot-to-UEFI-Converter/releases)
 
 
 ## How It Works
